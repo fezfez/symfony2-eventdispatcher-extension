@@ -1,6 +1,6 @@
 language: php
 php:
-  - 5.5
+  - 5.6
 
 before_install:
   - sudo apt-get install re2c libpcre3-dev
@@ -27,6 +27,6 @@ before_script:
   - composer install
 
 # This hardcoded path is to change :/
-script: php -dextension=symfony.so /home/travis/.phpenv/versions/5.5.9/bin/phpunit
+script: php -dextension=symfony.so /home/travis/.phpenv/versions/5.6.1/bin/phpunit
 
 #echo "extension=<extension>.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
