@@ -20,6 +20,7 @@ install:
   - cd zephir-master
   - sudo ./install -c
   - zephir
+  - phpize -v
 
 before_script:
   - cd $TRAVIS_BUILD_DIR && zephir build
