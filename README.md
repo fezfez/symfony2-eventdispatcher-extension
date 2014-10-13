@@ -1,7 +1,7 @@
 Symfony2 Event Dispatcher as PHP extension
 ==========================================
 
-[![Build Status](https://travis-ci.org/jolicode/symfony2-eventdispatcher-extension.png?branch=master)](https://travis-ci.org/jolicode/symfony2-eventdispatcher-extension)
+[![Build Status](https://travis-ci.org/fezfez/symfony2-eventdispatcher-extension.png?branch=master)](https://travis-ci.org/jolicode/symfony2-eventdispatcher-extension)
 
 This is an experimental WIP of the Symfony2 [EventDispatcher](https://github.com/symfony/EventDispatcher/tree/2.4) (version 2.4) rewritten in [Zephir](http://zephir-lang.com/index.html).
 
