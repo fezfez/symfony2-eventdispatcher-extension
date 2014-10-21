@@ -18,9 +18,9 @@ install:
   - ./configure
   - make
   - sudo make install
-  - wget https://github.com/phalcon/zephir/archive/0.5.2.zip -O zephir
+  - wget https://github.com/phalcon/zephir/archive/0.5.4.zip -O zephir
   - unzip -q zephir
-  - cd zephir-0.5.2
+  - cd zephir-0.5.4
   - sudo ./install -c
   - zephir
   - phpize -v
