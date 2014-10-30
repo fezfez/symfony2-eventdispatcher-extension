@@ -92,22 +92,8 @@ class EventDispatcher implements \Symfony\Component\EventDispatcher\EventDispatc
      */
     public function addListener(string $eventName, $listener, int $priority = 0) -> void
     {
-        // Fucking lolz :)
-        var tmp, tmp_list, tmp_list_key;
-        
         if !isset $this->listeners[$eventName] {
-            let tmp = [];
-
-            // We copy the full array manualy just so we can add an entry.
-            // This is shit, Zephir can't handle let $this->listeners[$eventName] = []; !!!
-            for tmp_list_key, tmp_list in $this->listeners {
-                if tmp_list != NULL || !empty(tmp_list) {
-                    let tmp[tmp_list_key] = tmp_list;
-                }
-            }
-
-            let tmp[$eventName] = [];
-            let $this->listeners = tmp;
+            let $this->listeners[$eventName] = [];
         }
 
         if !isset $this->listeners[$eventName][$priority] {
