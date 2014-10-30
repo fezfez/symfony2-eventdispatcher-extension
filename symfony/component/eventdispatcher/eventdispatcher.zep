@@ -100,7 +100,7 @@ class EventDispatcher implements \Symfony\Component\EventDispatcher\EventDispatc
             let $this->listeners[$eventName][$priority] = [];
         }
 
-        array_push($this->listeners[$eventName][$priority], $listener);
+        let $this->listeners[$eventName][$priority][] = $listener;
         
         if isset $this->sorted[$eventName] {
             //let $this->sorted[$eventName] = [];
